@@ -5,11 +5,14 @@ import seminar01.Spells;
 import java.util.ArrayList;
 
 public class Spearman extends BaseHero {
-    protected ArrayList<Spells> spells_book;
-    public Spearman(String name) {
-        super(200, name, 1, 6, 100, new int[]{10, 20}, "Копейщик"); // задаем параметры снайперу
+
+    public Spearman(String name, boolean firstTeam) {
+        super(200, name, firstTeam, 100, new int[]{10, 20});
     }
+
+
+    @Override
     public String getInfo() {
-        return "Копейщик";
+        return "Копейщик " + name;
     }
 }
