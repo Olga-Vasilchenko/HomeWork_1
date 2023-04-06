@@ -6,16 +6,15 @@ import java.util.ArrayList;
 
 public class Monk extends BaseHero {
     protected int mana;
-
-    protected ArrayList<Spells> spells_book;
+    protected ArrayList<Spells> spellsBook;
 
     public Monk(String name, boolean firstTeam) {
-        super(150, name, firstTeam, 30, new int[]{5, 8});
+        super("Монах", 50, name, firstTeam, 5, new int[]{2, 4}, 8);
         mana = 80;
     }
 
     @Override
     public String getInfo() {
-        return "Монах " + name;
+        return className + " " + name;
     }
 }

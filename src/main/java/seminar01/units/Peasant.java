@@ -1,13 +1,26 @@
 package seminar01.units;
 
+import java.util.ArrayList;
+import java.util.Objects;
+
 public class Peasant extends BaseHero {
 
     public Peasant(String name, boolean firstTeam) {
-        super(200, name, firstTeam, 20, new int[]{3, 5});
+        super("Крестьянин", 50, name, firstTeam, 5, new int[]{2, 4}, 1);
     }
 
     @Override
     public String getInfo() {
-        return "Крестьянин " + name;
+        return className + " " + name;
+    }
+
+    @Override
+    public void step() {
+        super.step();
+        if (Objects.equals(state, "Dead")) return;
+        if (Objects.equals(this.state, "Busy")) {
+            System.out.println(getInfo() + " принёс стрелу");
+            this.state = "Stand";
+        }
     }
 }

@@ -43,7 +43,7 @@ public class Team<T extends BaseHero> implements Iterable<BaseHero>{
                     heroes.add(new Spearman(getName(), firstTeam));
                     break;
                 case 5:
-                    heroes.add(new Thief(getName(), firstTeam));
+                    heroes.add(new Rogue(getName(), firstTeam));
                     break;
                 default:
                     heroes.add(new Peasant(getName(), firstTeam));

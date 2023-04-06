@@ -6,9 +6,7 @@ import java.util.ArrayList;
 
 public interface GameInterface {
 
-    void step(ArrayList<BaseHero> enemyTeam );
-
     String getInfo();
 
-    void step(Team<BaseHero> enemyTeam);
+    void step();
 }
