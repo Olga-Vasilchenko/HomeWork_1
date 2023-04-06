@@ -2,7 +2,6 @@ package seminar01;
 
 import seminar01.teams.Team;
 import seminar01.units.*;
-
 import java.util.ArrayList;
 import java.util.Random;
 

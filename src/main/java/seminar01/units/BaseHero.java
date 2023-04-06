@@ -4,16 +4,13 @@ import seminar01.Names;
 import seminar01.teams.Team;
 import seminar01.weapons.Weapons;
 
-import java.util.ArrayList;
-import java.util.Random;
+import java.util.*;
 
 public abstract class BaseHero implements GameInterface {
 
-    protected Coords position;
+   protected static int count;
 
-    protected static int count;
-
-    protected String class_name;
+    protected String className;
 
     protected boolean team;
 
@@ -26,12 +23,11 @@ public abstract class BaseHero implements GameInterface {
     protected static int lastSecondTeamY = 0;
 
     protected int hp;
-    protected int max_hp;
-
+    protected int maxHp;
     protected int armor;
     protected int[] damage;
-
     protected Weapons weapon;
+    protected Coords position;
 
     public String getHeroName(){
         return name;
