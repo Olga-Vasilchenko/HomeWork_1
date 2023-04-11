@@ -34,7 +34,7 @@ public class Team<T extends BaseHero> implements Iterable<BaseHero>{
                     heroes.add(new Crossbowman(getName(), firstTeam));
                     break;
                 case 2:
-                    heroes.add(new Mage(getName(), firstTeam));
+                    heroes.add(new Wizard(getName(), firstTeam));
                     break;
                 case 3:
                     heroes.add(new Monk(getName(), firstTeam));
@@ -46,7 +46,7 @@ public class Team<T extends BaseHero> implements Iterable<BaseHero>{
                     heroes.add(new Rogue(getName(), firstTeam));
                     break;
                 default:
-                    heroes.add(new Peasant(getName(), firstTeam));
+                    heroes.add(new Farmer(getName(), firstTeam));
             }
         }
     }

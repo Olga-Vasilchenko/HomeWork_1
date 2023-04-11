@@ -18,7 +18,6 @@ public enum SpellBook {
     public float getCost() {
         return cost;
     }
-
     public float getPower() {
         return power;
     }
